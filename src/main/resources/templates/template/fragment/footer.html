@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<footer th:fragment="myCopy">
+  Hello World! This is a Footer!
+</footer>
+
+<footer th:fragment="myCopyParam (param1, param2)">
+  <p>Hello World! This is Parameter!</p>
+  <p th:text="${param1}"></p>
+  <p th:text="${param2}"></p>
+</footer>
+
+</body>
+
+</html>
