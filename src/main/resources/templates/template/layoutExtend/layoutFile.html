@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html th:fragment="layout (title, content)" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:replace="${title}">이 타이틀이 나오면 안 되는 거 아니뇨?</title>
+</head>
+<body>
+<h1>이건 공통으로 쓰는 헤더임</h1>
+<div th:replace="${content}">
+  <p>이건 공통p영역인데 나오면 안되는거임</p>
+</div>
+<footer>
+  footer에 대한 리플레이스는 없으니 이건 여기서 공통으로 쓰넌거고
+</footer>
+</body>
+</html>
